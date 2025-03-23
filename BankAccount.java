@@ -35,6 +35,12 @@ public void withdrawal(double amount){
     }
 }
 
+public void accountSummary() {
+    System.out.println("name: " + firstName + " " + lastName);
+    System.out.println("ID: " + accountID);
+    System.out.println("balance:$" + balance);
+}
+
 public String getFirstName() {
     return firstName;
 }

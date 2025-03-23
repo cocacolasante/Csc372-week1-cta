@@ -20,6 +20,14 @@ public class CheckingAccount extends BankAccount{
         }
     }
 
+    public void displayAccount() {
+        System.out.println("Checking account details:");
+        System.out.println("name: " + getFirstName() + " " + getLastName());
+        System.out.println("ID: " + getAccountID());
+        System.out.println("balance: $" + getBalance());
+        System.out.println("interest rate: " + interestRate);
+    }
+
     public double getInterestRate() {
         return interestRate;
     }
