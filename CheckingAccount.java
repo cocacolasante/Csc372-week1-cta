@@ -8,13 +8,13 @@ public class CheckingAccount extends BankAccount{
     }
 
     public void processWithdrawal(double amount){
-        if( amount >this.getBalance()){
+        if( amount <this.getBalance()){
             withdrawal(amount);
             System.out.println(getFirstName() +"sucessfully withdrew: " + amount);
         } else{
             double overdraftFee = 30.0;
 
-            this.balance = this.balance - amount - overdraftFee;
+            this.balance = balance - amount - overdraftFee;
             System.out.println(getFirstName() + "has overdrawn the account");
             System.out.println("New balance (negative): $" + balance);
         }
